@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+</head>
+<body>
+    <p>Do you love me?</p>
+    <input type="button" value="yes" onclick="showMessage()"> <input id="btn" type="button" value="No" onmouseover = Move() style="position: absolute">
+    <script>
+        function showMessage() {
+            document.write("Love you ! ahiii");
+        }
+        function Move() {
+            var x =Math.round(Math.random() * window.innerWidth);
+            var y =Math.round(Math.random() * window.innerHeight);
+            document.getElementById("btn").style.left = x + "px";
+            document.getElementById("btn").style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
